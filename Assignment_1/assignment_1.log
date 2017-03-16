@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.17)  16 MAR 2017 14:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.17)  16 MAR 2017 14:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -357,6 +357,40 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+LaTeX Font Info:    Try loading font information for U+eur on input line 18.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/ueur.fd
+File: ueur.fd 2013/01/14 v3.01 Euler Roman
+)
+LaTeX Font Info:    Try loading font information for U+euf on input line 18.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+)
+LaTeX Font Info:    Try loading font information for U+eus on input line 18.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/ueus.fd
+File: ueus.fd 2013/01/14 v3.01 Euler Script
+)
+LaTeX Font Info:    Try loading font information for U+euex on input line 18.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/ueuex.fd
+File: ueuex.fd 2013/01/14 v3.01 Euler extra symbols
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 18.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 18.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 18--22
+
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 22.54448pt.
@@ -366,23 +400,35 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-(./assignment_1.aux) ) 
+[2] (./assignment_1.aux) ) 
 Here is how much of TeX's memory you used:
- 2912 strings out of 493013
- 34577 string characters out of 6133343
- 95958 words of memory out of 5000000
- 6434 multiletter control sequences out of 15000+600000
- 4553 words of font info for 17 fonts, out of 8000000 for 9000
+ 2994 strings out of 493013
+ 36102 string characters out of 6133343
+ 98958 words of memory out of 5000000
+ 6478 multiletter control sequences out of 15000+600000
+ 9987 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,10n,43p,238b,229s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr10.pfb>
-Output written on assignment_1.pdf (1 page, 34523 bytes).
+ 39i,10n,43p,348b,208s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2016/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmti10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmti7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts
+/euler/euex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfon
+ts/euler/eufm10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsf
+onts/euler/eufm7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/ams
+fonts/euler/eurm10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/a
+msfonts/euler/eusm10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
+/amsfonts/euler/eusm7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publi
+c/amsfonts/symbols/msam10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/p
+ublic/amsfonts/symbols/msbm10.pfb>
+Output written on assignment_1.pdf (2 pages, 99471 bytes).
 PDF statistics:
- 20 PDF objects out of 1000 (max. 8388607)
- 13 compressed objects within 1 object stream
+ 71 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -14,7 +14,20 @@
 \rhead{{\bf Date: }01/31/2017} 
 
 \section*{Question 1}{
-    
+    \subsubsection*{a.}{
+        First, prove that \(\emptyset \in \mathit{S}\).\\
+        Obviously, we have \(\emptyset \in \mathit{E}=\{\mathrm{1,2,...,n}\}\), and \(\mathit{a}(\emptyset)=\sum_{\mathit{j} \in \emptyset}=\mathrm{0} \leqslant \mathit{b} \in \mathbb{R}_{+}\)\\
+        So, \(\emptyset \in \mathit{S}\).\\
+        Second, prove that \(\mathit{X} \subseteq \mathit{Y} \in \mathit{S} \Rightarrow \mathit{X} \in \mathit{S}\)\\
+        \[\mathit{Y} \in \mathit{S} \Rightarrow \mathit{a}(\mathit{Y}) = \sum_{\mathit{j} \in \mathit{Y}}\mathit{a_j} \leqslant \mathit{b}\]
+        \[\mathit{X} \subseteq \mathit{Y} \Rightarrow \mathit{a}(\mathit{X}) = \sum_{\mathit{j} \in \mathit{X}}\mathit{a_j} = \sum_{\mathit{i} \in \mathit{Y}}\mathit{a_i} - \sum_{\mathit{j} \in \mathit{Y} \setminus \mathit{X}}\mathit{a_j} \leqslant \sum_{\mathit{j} \in \mathit{Y}}\mathit{a_j} \leqslant \mathit{b}\]
+        So, this difines an independence system \(\mathcal{F}\subseteq \mathrm{2}^{\mathit{E}}\)
+    }
+    \subsubsection*{b.}{
+        According to the defination, we have,
+        \[\mathrm{n=6} \Rightarrow \mathit{S} \subseteq \mathit{E} = \{ \mathrm{1,2,3,4,5,6}\}\]
+        \[\mathit{a}=\mathrm{(1,1,1,4,4,5), b=8} \Rightarrow \mathit{a}(\mathit{S}) = \sum_{\mathit{j} \in \mathit{S}}\mathit{a_j} \leqslant \mathrm{8}\]
+    }
 }
 
 \section*{Question 2}{
@@ -50,7 +63,7 @@
 }
 
 \section*{Question 10}{
-
+    \[\mathcal{B}+\mathcal{F}\]
 }
 
 
