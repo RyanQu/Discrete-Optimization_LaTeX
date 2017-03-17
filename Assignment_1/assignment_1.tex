@@ -16,7 +16,7 @@
 
 \section*{Question 1}{
     \subsection*{a.}{
-        This difines an independence system \((\mathit{E},\mathcal{F}), \mathcal{F} \subseteq \mathrm{2}^{\mathit{E}}\)\\
+        This defines an independence system \((\mathit{E},\mathcal{F}), \mathcal{F} \subseteq \mathrm{2}^{\mathit{E}}\)\\
 
         First, prove that \(\emptyset \in \mathcal{F}\).
 
@@ -196,6 +196,30 @@
 \section*{Question 5}{
     \subsection*{a.}{
         \[\lvert \mathit{B} \rvert = \mathrm{\frac{15 \times 3 + 18 \times 5 + 12 \times 15}{1+2+4} = 45}\]
+    }
+    \subsection*{b.}{
+        The maximum cardinality matching in this graph is 45. \\
+
+        If graph \( \mathit{G} = (\mathit{A} \cup \mathit{B}, \mathit{E})\) has a \textit{Perfect Matching}, which has \(\nu (\mathit{G}) = \lvert \mathit{A} \rvert\), the maximum cardinality matching will be \textit{Perfect Matching}. 
+
+        Now prove that in this case \( \mathit{G} = (\mathit{A} \cup \mathit{B}, \mathit{E})\) has a \textit{Perfect Matching}.
+
+        According to \textit{Theorem 3 (Frobeiniu(1971), Hall(1935))}, only need to prove, 
+        \[\lvert \mathit{S} \rvert \leqslant \lvert \mathit{N(S)} \rvert \quad \text{for all} \quad \mathit{S} \subseteq \mathit{A}\]
+
+        Proof by contradiction. If \(\exists \lvert \mathit{S} \rvert > \lvert \mathit{N(S)} \rvert, \mathit{S} \subseteq \mathit{A}\). Suppose that \(\mathrm{k} = \lvert \mathit{S} \rvert, \mathrm{m} = \lvert \mathit{N(S)} \rvert\), i.e. \(\mathrm{k} > \mathrm{m}\). 
+
+        Suppose that \[\mathit{k}_{\mathrm{1}} + \mathit{k}_{\mathrm{2}} + \mathit{k}_{\mathrm{3}} = \mathit{k} > \mathit{m}\]
+
+        in which \(\mathit{k}_{\mathrm{1}}\) refers the number of vertices of degree 3, \(\mathit{k}_{\mathrm{2}}\) refers the number of vertices of degree 5, \(\mathit{k}_{\mathrm{3}}\) refers the number of vertices of degree 15.
+
+        According to the defination of \(\mathit{B}\), we could get \(\mathit{m} \geqslant \mathrm{3}\mathit{k}_{\mathrm{1}}\), \(\mathit{m} \geqslant \mathrm{\frac{5}{2}}\mathit{k}_{\mathrm{2}}\), \(\mathit{m} \geqslant \mathrm{\frac{15}{4}}\mathit{k}_{\mathrm{3}}\), so we have 
+
+        \[\mathit{m} = \mathrm{(\frac{1}{3} + \frac{2}{5} + \frac{4}{15})}\mathit{m} \geqslant \mathit{k}_{\mathrm{1}} + \mathit{k}_{\mathrm{2}} + \mathit{k}_{\mathrm{3}} = \mathit{k} > \mathit{m}\]
+
+        Which makes \(\mathit{m} > \mathit{m}\), \textbf{contradiction}.
+
+        So graph \( \mathit{G} = (\mathit{A} \cup \mathit{B}, \mathit{E})\) has a \textit{Perfect Matching}, and \(\nu (\mathit{G}) = \lvert \mathit{A} \rvert\).
     }
 }
 
