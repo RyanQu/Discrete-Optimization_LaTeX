@@ -3,6 +3,7 @@
 \usepackage[mathcal,mathbf]{euler}
 \usepackage{theorem,amsmath,enumerate,fancyhdr,amssymb,amsfonts}
 \usepackage[pdftex]{graphics}
+\usepackage{graphicx}
 
 \usepackage{myDefs}
 
@@ -162,7 +163,34 @@
 }
 
 \section*{Question 4}{
+    As the defination, the graph is following.
+    \begin{center}{
+        \includegraphics[scale=0.5]{P4.png}
+    }
+    \end{center}
+    Use \textit{Kruskal's Algorithm} to find the maximum-weight spanning tree.
 
+    \paragraph{Initialize}{
+        Sort \(\mathit{E}\) by weight from largest to smallest. 
+        \[\mathit{E} = \big{\{} (1,2), (3,5), (4,5), (3,4), (2,3), (6,7), (2,7), (1,4), (5,6), (2,5), (4,7), (4,6)\big{\}}\]
+        Set \(\mathit{T}=\emptyset\)
+
+        \begin{enumerate}{
+            \item \(\mathit{T} \cup \{ (1,2) \} \), cycle free, \(\mathit{T} = \mathit{T} \cup \{ (1,2) \} \)
+            \item \(\mathit{T} \cup \{ (3,5) \} \), cycle free, \(\mathit{T} = \mathit{T} \cup \{ (3,5) \} \)
+            \item \(\mathit{T} \cup \{ (4,5) \} \), cycle free, \(\mathit{T} = \mathit{T} \cup \{ (4,5) \} \)
+            \item \(\mathit{T} \cup \{ (3,4) \} \), cycle!
+            \item \(\mathit{T} \cup \{ (2,3) \} \), cycle free, \(\mathit{T} = \mathit{T} \cup \{ (2,3) \} \)
+            \item \(\mathit{T} \cup \{ (6,7) \} \), cycle free, \(\mathit{T} = \mathit{T} \cup \{ (6,7) \} \)
+            \item \(\mathit{T} \cup \{ (2,7) \} \), cycle free, \(\mathit{T} = \mathit{T} \cup \{ (2,7) \} \)
+            \item \(\mathit{T} \cup \{ (1,4) \} \), cycle! No alone vertex, means rest edges make cycle, algorithm end.
+        }
+        \end{enumerate}
+        So that the \(\mathit{T} = \{ (1,2), (3,5), (4,5), (2,3), (6,7), (2,7)\} \)
+
+        The weight of the maximum-weight spanning tree is
+        \[\mathit{w}_{1,2}+\mathit{w}_{3,5}+\mathit{w}_{4,5}+\mathit{w}_{2,3}+\mathit{w}_{6,7}+\mathit{w}_{2,7} = 47\]
+    }
 }
 
 \section*{Question 5}{
