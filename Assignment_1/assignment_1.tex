@@ -15,13 +15,21 @@
 
 \section*{Question 1}{
     \subsection*{a.}{
-        First, prove that \(\emptyset \in \mathit{S}\).\\
-        Obviously, we have \(\emptyset \in \mathit{E}=\{\mathrm{1,2,...,n}\}\), and \(\mathit{a}(\emptyset)=\sum_{\mathit{j} \in \emptyset}=\mathrm{0} \leqslant \mathit{b} \in \mathbb{R}_{+}\)\\
-        So, \(\emptyset \in \mathit{S}\).\\
-        Second, prove that \(\mathit{X} \subseteq \mathit{Y} \in \mathit{S} \Rightarrow \mathit{X} \in \mathit{S}\)\\
-        \[\mathit{Y} \in \mathit{S} \Rightarrow \mathit{a}(\mathit{Y}) = \sum_{\mathit{j} \in \mathit{Y}}\mathit{a_j} \leqslant \mathit{b}\]
-        \[\mathit{X} \subseteq \mathit{Y} \Rightarrow \mathit{a}(\mathit{X}) = \sum_{\mathit{j} \in \mathit{X}}\mathit{a_j} = \sum_{\mathit{i} \in \mathit{Y}}\mathit{a_i} - \sum_{\mathit{j} \in \mathit{Y} \setminus \mathit{X}}\mathit{a_j} \leqslant \sum_{\mathit{j} \in \mathit{Y}}\mathit{a_j} \leqslant \mathit{b}\]
-        So, this difines an independence system \(\mathcal{F}\subseteq \mathrm{2}^{\mathit{E}}\)
+        This difines an independence system \((\mathit{E},\mathcal{F}), \mathcal{F} \subseteq \mathrm{2}^{\mathit{E}}\)\\
+
+        First, prove that \(\emptyset \in \mathcal{F}\).
+
+        Obviously, we have \(\emptyset \subseteq \mathit{E}=\{\mathrm{1,2,...,n}\}\), and \(\mathit{a}(\emptyset)=\sum_{\mathit{j} \in \emptyset}=\mathrm{0} \leqslant \mathit{b} \in \mathbb{R}_{+}\)
+
+        So, \(\emptyset \in \mathcal{F}\).\\
+
+        Second, prove that \(\mathit{X} \subseteq \mathit{Y} \in \mathcal{F} \Rightarrow \mathit{X} \in \mathcal{F}\)
+
+        \[\mathit{Y} \in \mathcal{F} \Rightarrow \mathit{a}(\mathit{Y}) = \sum_{\mathit{j} \in \mathit{Y}}\mathit{a_j} \leqslant \mathit{b}\]
+
+        \[\mathit{X} \subseteq \mathit{Y} \Rightarrow \mathit{a}(\mathit{X}) = \sum_{\mathit{j} \in \mathit{X}}\mathit{a_j} = \sum_{\mathit{i} \in \mathit{Y}}\mathit{a_i} - \sum_{\mathit{j} \in \mathit{Y} \setminus \mathit{X}}\mathit{a_j} \leqslant \sum_{\mathit{j} \in \mathit{Y}}\mathit{a_j} \leqslant \mathit{b}\]\\
+
+        So, this difines an independence system \((\mathit{E},\mathcal{F}), \mathcal{F} \subseteq \mathrm{2}^{\mathit{E}}\)
     }
     \subsection*{b.}{
         According to the defination, we have
@@ -42,7 +50,7 @@
         Need to find all the subset of \(\mathit{S}\) So the complexity is \(\mathit{O(n^2)}\)
     }
     \subsection*{e.}{
-        As \textit{b.} mentioned, \(\mathit{B}_{\mathrm{3}}=\mathrm{\{1,2,3,6\}},\mathit{B}_{\mathrm{4}}=\mathrm{\{4,5\}}\). If we use \textit{Best-in Greedy}, we may lose the \(\mathit{B_4}\), because there is a solution when the first choice is 6. 
+        As \textit{b.} mentioned, \(\mathit{B}_{\mathrm{3}}=\mathrm{\{1,2,3,6\}},\mathit{B}_{\mathrm{4}}=\mathrm{\{4,5\}}\). If we use \textit{Best-in Greedy}, we may lose the \(\mathit{B}_{\mathrm{4}}\), because there is a solution when the first choice is 6. 
     }
 }
 
@@ -110,7 +118,29 @@
 }
 
 \section*{Question 3}{
+    \subsection*{a.}{
+        \(\big{(}\mathit{V(G)},\mathcal{F}\big{)}\) is a matroid.\\
 
+        First, prove that \(\emptyset \in \mathcal{F}\).
+
+        Obviously, we have \(\emptyset \subseteq \mathit{V(G)}\), and there is no edge because of no vertex. 
+
+        So, \(\emptyset \in \mathcal{F}\).\\
+
+        Second, prove that \(\mathit{X} \subseteq \mathit{Y} \in \mathcal{F} \Rightarrow \mathit{X} \in \mathcal{F}\)
+
+        If \(\mathit{Y}\) is independent, which means no edge inside the \(\mathit{Y}\), obviously all the subsets of \(\mathit{Y}\) contain no edge inside.
+
+        So, this difines an independence system \(\big{(}\mathit{V(G)},\mathcal{F}\big{)}, \mathcal{F} \subseteq \mathrm{2}^{\mathit{V(G)}}\)\\
+
+        Third, to prove that the independence system \(\big{(}\mathit{V(G)},\mathcal{F}\big{)}\) is a matroid, according to the \textit{lemma 2}, only need to prove \textbf{for each \(\mathit{X} \subseteq \mathit{E}\), all bases of \(\mathit{X}\) are of the same size.}
+
+        Supposed \(\lvert \mathit{V(G)} \rvert = \mathrm{n}\). 
+
+        Apparently, no matter which vertices are chosen, for \(\mathrm{n}\) is \textit{odd}, the size of all the bases of \(\mathit{X}\) is equal to \(\frac{\mathit{n}+\mathrm{1}}{\mathrm{2}}\), and for \(\mathrm{n}\) is \textit{even}, the size of all the bases of \(\mathit{X}\) is equal to \(\frac{\mathit{n}}{\mathrm{2}}\).\\
+
+        So, \(\big{(}\mathit{V(G)},\mathcal{F}\big{)}\) is a matroid.
+    }
 }
 
 \section*{Question 4}{
