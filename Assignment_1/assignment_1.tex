@@ -4,8 +4,33 @@
 \usepackage{theorem,amsmath,enumerate,fancyhdr,amssymb,amsfonts}
 \usepackage[pdftex]{graphics}
 \usepackage{graphicx}
+\usepackage{listings}
+\usepackage{courier}
 
 \usepackage{myDefs}
+
+
+\lstdefinelanguage{AMPL}{keywords={set,param,var,arc,integer,minimize,maximize,subject,to,node,sum,in,Current,complements,integer,solve_result_num,IN,contains,less,suffix,INOUT,default,logical,sum,Infinity,dimen,max,symbolic
+,Initial,div,min,table,LOCAL,else,option,then,OUT,environ,setof ,union,all,exists,shell_exitcodeuntil,binary,forall,solve_exitcodewhile ,by,if,solve_messagewithin,check,in,solve_result
+},sensitive=true,comment=[l]{\#}}
+
+\lstset{frame=tb,
+  language=AMPL,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\bfseries,
+  commentstyle=\textit,
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
 
 \begin{document}
 
@@ -14,7 +39,7 @@
 \\{\bf Author: }{Yuan Qu} } 
 \rhead{{\bf Date: }01/31/2017} 
 
-\section*{Question 1}{
+\section*{Problem 1}{
     \subsection*{a.}{
         This defines an independence system \((\mathit{E},\mathcal{F}), \mathcal{F} \subseteq \mathrm{2}^{\mathit{E}}\)\\
 
@@ -55,7 +80,7 @@
     }
 }
 
-\section*{Question 2}{
+\section*{Problem 2}{
     \subsection*{a.}{
         We have the job set \(\mathit{E}\) like following
         \begin{center}{
@@ -118,7 +143,7 @@
     }
 }
 
-\section*{Question 3}{
+\section*{Problem 3}{
     \subsection*{a.}{
         \(\big{(}\mathit{V(G)},\mathcal{F}\big{)}\) is a matroid.\\
 
@@ -162,7 +187,7 @@
     }
 }
 
-\section*{Question 4}{
+\section*{Problem 4}{
     As the defination, the graph is following.
     \begin{center}{
         \includegraphics[scale=0.5]{P4.png}
@@ -193,7 +218,7 @@
     }
 }
 
-\section*{Question 5}{
+\section*{Problem 5}{
     \subsection*{a.}{
         \[\lvert \mathit{B} \rvert = \mathrm{\frac{15 \times 3 + 18 \times 5 + 12 \times 15}{1+2+4} = 45}\]
     }
@@ -223,23 +248,162 @@
     }
 }
 
-\section*{Question 6}{
+\section*{Problem 6}{
+    Use AMPL model to solve this problem. \\
+
+    Code :
+
+    \begin{lstlisting}[language=AMPL]
+#File: CuttingStock.mod
+#Date: 2017.03.16
+#Author: Yuan Qu
+
+#-----CUTTING STOCK MODEL USING PATTERNS-----
+param roll_width >0;
+
+set WIDTHS;
+param orders {WIDTHS} >0;
+
+param nPAT integer >=0;
+set PATTERNS := 1..nPAT;
+
+param A{WIDTHS, PATTERNS} integer >=0;
+    check{j in PATTERNS}:
+        sum {i in WIDTHS} i * A[i,j] <= roll_width;
+        
+var X{PATTERNS} integer >=0;
+
+minimize NumberOfRolls:
+    sum {j in PATTERNS} X[j];
+
+subj to OrderFill {i in WIDTHS}:
+    sum {j in PATTERNS} A[i,j] * X [j] >=orders[i];
+
+#-----KNAPSACK SUBPROLEM FOR CUTTING STOCK-----
+param dualprice {WIDTHS} default 0.0;
+
+var C {WIDTHS} integer >=0;
+
+minimize Reduced_Cost:
+    1 - sum {i in WIDTHS} dualprice[i] * C[i];
+
+subj to Width_Limit:
+    sum {i in WIDTHS} i * C[i]  <=roll_width;
+
+#-----Reading Data and Choosing Solver---------
+data CuttingStock.dat;
+
+option solver cplex;
+option solution_round 6;
+
+#-----Defining the Two Stages------------------
+problem Cutting_Opt: X, NumberOfRolls, OrderFill;
+option relax_integrality 1;
+
+problem Pattern_Gen: C, Reduced_Cost, Width_Limit;
+option relax_integrality 0;
+
+#-----Initializing Pattern Set-----------------
+let nPAT := 0;
+
+for {i in WIDTHS} {
+   let nPAT := nPAT + 1;
+   let A[i,nPAT] := floor (roll_width/i);
+   let {i2 in WIDTHS: i2 <> i} A[i2,nPAT] := 0;
+};
+
+#-----Two Stage Optimization Loop--------------
+repeat {
+   solve Cutting_Opt;
+
+   let {i in WIDTHS} dualprice[i] := OrderFill[i].dual;
+
+   solve Pattern_Gen;
+
+   if Reduced_Cost < -0.00001 then {
+      let nPAT := nPAT + 1;
+      let {i in WIDTHS} A[i,nPAT] := C[i];
+      
+      display C;
+   }
+   else break;
+};
+
+#-----Final Integer Program with Generated Patterns------
+option Cutting_Opt.relax_integrality 0;
+solve Cutting_Opt;
+
+#-----Displaying Results---------------------------------
+display A; 
+display X;
+    \end{lstlisting}
+
+    Data:
+    \begin{lstlisting}[language=AMPL]
+#File: CuttingStock.dat
+#Date: 2017.03.16
+#Author: Yuan Qu
+
+param roll_width := 24 ;
+
+param: WIDTHS: orders :=
+          3     12300
+          5     9800
+          12    3600
+          7     5750
+          8     15250
+          9     6700 ;
+
+    \end{lstlisting}
+
+    The result:
+
+    In this part, \(\mathit{A}\) means the Patterns, in which \(\mathit{A[i,j]}\) refers in Pattern \(\mathit{i}\), the cut number of Width \(\mathit{j}\). \(\mathit{X}\) means the optimal solution, in which \(\mathit{X[i]}\) refers the number of Pattern \(\mathit{i}\) processed.
+    \begin{lstlisting}
+A [*,*] (tr)
+:    3   5   7   8   9  12    :=
+1    8   0   0   0   0   0
+2    0   4   0   0   0   0
+3    0   0   0   0   0   2
+4    0   0   3   0   0   0
+5    0   0   0   3   0   0
+6    0   0   0   0   2   0
+7    0   1   0   0   2   0
+8    0   2   2   0   0   0
+9    1   4   0   0   0   0
+10   0   3   0   0   1   0
+11   2   0   0   0   2   0
+;
+
+X [*] :=
+ 1   869
+ 2     0
+ 3  1800
+ 4     0
+ 5  5084
+ 6     0
+ 7     0
+ 8  2875
+ 9     0
+10  1350
+11  2675
+;
+    \end{lstlisting}
+}
+
+\section*{Problem 7}{
 
 }
 
-\section*{Question 7}{
+\section*{Problem 8}{
 
 }
 
-\section*{Question 8}{
+\section*{Problem 9}{
 
 }
 
-\section*{Question 9}{
-
-}
-
-\section*{Question 10}{
+\section*{Problem 10}{
     \[\mathcal{B}+\mathcal{F}\]
 }
 
