@@ -92,6 +92,21 @@
         \end{center}
         The total profit would be: \(\mathrm{7+6+4+3=20}\)
     }
+    \subsection*{b.}{
+        Suppose \(\mathit{A}\) and \(\mathit{B}\) are two independent subsets of \(\mathit{E}\), so we have \(\mathit{A}, \mathit{B} \subseteq \mathit{E}\), and \(\mathit{A}, \mathit{B} \in \mathcal{F}\). Construct \(\mathit{A}\) and \(\mathit{B}\) as:
+
+        \[\mathit{A}=\{ \mathit{a}_{\mathrm{1}}, \mathit{a}_{\mathrm{2}}, ..., \mathit{a}_{\mathrm{k}}\}, \mathit{B}=\{ \mathit{b}_{\mathrm{1}}, \mathit{b}_{\mathrm{2}}, ..., \mathit{b}_{\mathrm{m}}\}, \mathit{a}_{\mathrm{i}} \text{ and } \mathit{b}_{\mathrm{j}} \text{ means the job in }\mathit{A}, \mathit{B}\]
+
+        Suppose that \(\mathrm{k} < \mathrm{m}\), so \(\lvert \mathit{A} \rvert < \lvert \mathit{B} \rvert\).
+
+        If all the due of \(\mathit{a}_{\mathrm{i}}\) is less or equal than \(\mathrm{k}\), it's easy to find a \(\mathit{b}_{\mathrm{j}}\) whose due is larger than \(\mathrm{k}\), because of \(\mathrm{k} < \mathrm{m}\). So, we can add \(\mathit{b}_{\mathrm{j}}\) to \(\mathit{A}\) as \(\mathit{a}_{\mathrm{k+1}}\) and all the jobs can be processed, 
+        \[\mathit{b}_{\mathrm{j}} \in \mathit{B} \setminus \mathit{A}, \mathit{A} \cup \{ \mathit{b}_{\mathrm{j}} \} \in \mathcal{F}\]
+
+        If \(\exists \mathit{a}_{\mathrm{i}}, \mathit{d}_{\mathit{a}_{\mathrm{i}}}>k\), we can find a \(\mathit{b}_{\mathrm{j}} \in \mathit{B} \setminus \mathit{A}\) whose due is larger than \(\mathrm{i}\), because of \(\mathrm{k-i} < \mathrm{m-i}\). So, we can put \(\mathit{a}_{\mathrm{i}}\) as \((\mathrm{k+1})\)th process and set \(\mathit{b}_{\mathrm{j}}\) as \(\mathrm{i}\)th process, all the jobs can be processed,
+        \[\mathit{b}_{\mathrm{j}} \in \mathit{B} \setminus \mathit{A}, \mathit{A} \cup \{ \mathit{b}_{\mathrm{j}} \} \in \mathcal{F}\]
+
+        So, \((\mathit{E},\mathcal{F})\) is a matroid.
+    }
 }
 
 \section*{Question 3}{
