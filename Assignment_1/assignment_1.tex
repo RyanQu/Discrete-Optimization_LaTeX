@@ -356,9 +356,11 @@ param: WIDTHS: orders :=
 
     \end{lstlisting}
 
-    The result:
+    Result:
 
     In this part, \(\mathit{A}\) means the Patterns, in which \(\mathit{A[i,j]}\) refers in Pattern \(\mathit{i}\), the cut number of Width \(\mathit{j}\). \(\mathit{X}\) means the optimal solution, in which \(\mathit{X[i]}\) refers the number of Pattern \(\mathit{i}\) processed.
+
+    The processing result during the iteration is not copied.
     \begin{lstlisting}
 A [*,*] (tr)
 :    3   5   7   8   9  12    :=
@@ -392,7 +394,84 @@ X [*] :=
 }
 
 \section*{Problem 7}{
+    Use AMPL model to solve this problem. \\
 
+    Code :
+    \begin{lstlisting}[language=AMPL]
+#File: P7.mod
+#Date: 2017.03.16
+#Author: Yuan Qu
+
+param total >0;
+set ID;
+
+param profit {ID} > 0;
+param cost {ID} > 0;
+param f_min {ID} >= 0;
+param f_max {j in ID} >= f_min[j];
+
+var Invest {j in ID} integer >= f_min[j], <= f_max[j];
+
+maximize Total_Profit: sum {j in ID} profit[j] * Invest[j];
+
+subject to Total_Cost: sum {j in ID} cost[j] * Invest[j] <= total ;
+
+data P7.dat;
+
+option solver cplex;
+solve;
+
+display Total_Profit;
+display Invest;
+    \end{lstlisting}
+
+    Data:
+    \begin{lstlisting}[language=AMPL]
+#File: P7.dat
+#Date: 2017.03.16
+#Author: Yuan Qu
+
+param total := 100 ;
+
+set ID := A B C D E F G H I J K L;
+param: profit   cost    f_min   f_max :=
+    A   30      16      0       1
+    B   25      15      0       1
+    C   5       2       0       1
+    D   9       4       0       1
+    E   11      4       0       1
+    F   7       3       0       1
+    G   14      9       0       1
+    H   19      12      0       1
+    I   40      29      0       1
+    J   29      20      0       1
+    K   30      18      0       1
+    L   34      25      0       1;
+    \end{lstlisting}
+
+    Result: it means the max total profit is 172 by investing \(\{ \mathit{A}, \mathit{B}, \mathit{C}, \mathit{D}, \mathit{E}, \mathit{G}, \mathit{H}, \mathit{J}, \mathit{K}\}\)
+    \begin{lstlisting}[language=AMPL]
+CPLEX 12.7.0.0: optimal integer solution; objective 172
+5 MIP simplex iterations
+0 branch-and-bound nodes
+No basis.
+Total_Profit = 172
+
+Invest [*] :=
+A  1
+B  1
+C  1
+D  1
+E  1
+F  0
+G  1
+H  1
+I  0
+J  1
+K  1
+L  0
+;
+\end{lstlisting}
 }
 
 \section*{Problem 8}{
