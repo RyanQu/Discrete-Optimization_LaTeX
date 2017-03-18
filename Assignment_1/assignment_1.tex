@@ -612,7 +612,34 @@ s7 = 0
 }
 
 \section*{Problem 10}{
-    \[\mathcal{B}+\mathcal{F}\]
+    \begin{center}{
+        \includegraphics[scale=0.4]{P10.png}
+    }
+    \end{center}
+    \subsection*{a.}{
+        Because the vertices \(\mathit{V}_{\mathrm{1}}, \mathit{V}_{\mathrm{2}}, \mathit{V}_{\mathrm{7}}, \mathit{V}_{\mathrm{8}}\) have odd degree, so there is no \textit{Eulerian path} in this Graph \(\mathit{G}\). 
+
+        So, to get the optimal solution of \textit{Chinese Postman Problem}, we need to consider the \(\mathit{K}_{\mathrm{4}}\), the The complete graph on \(\mathrm{4}\) vertices of \(\mathit{V}_{\mathrm{1}}, \mathit{V}_{\mathrm{2}}, \mathit{V}_{\mathrm{7}}, \mathit{V}_{\mathrm{8}}\).
+
+        \begin{center}{
+            \includegraphics[scale=0.6]{P10_1.png}
+        }
+        \end{center}
+
+        According to that, we choose path \(\mathit{V}_{\mathrm{1}} \to \mathit{V}_{\mathrm{2}}\) and \(\mathit{V}_{\mathrm{7}} \to \mathit{V}_{\mathrm{8}}\) to add on (means repeat) the orginal graph.
+
+        \begin{center}{
+            \includegraphics[scale=0.6]{P10_2.png}
+        }
+        \end{center}
+
+        In this case, it's easy to find a \textit{Eulerian path} that:
+        \[\mathit{V}_{\mathrm{1}} \to \mathit{V}_{\mathrm{2}} \to \mathit{V}_{\mathrm{5}} \to \mathit{V}_{\mathrm{8}} \to \mathit{V}_{\mathrm{6}} \to \mathit{V}_{\mathrm{5}} \to \mathit{V}_{\mathrm{3}} \to \mathit{V}_{\mathrm{6}} \to \mathit{V}_{\mathrm{8}} \to \mathit{V}_{\mathrm{7}} \to \mathit{V}_{\mathrm{6}} \to \mathit{V}_{\mathrm{7}}\]
+        \[\to \mathit{V}_{\mathrm{6}} \to \mathit{V}_{\mathrm{4}} \to \mathit{V}_{\mathrm{7}} \to \mathit{V}_{\mathrm{4}} \to \mathit{V}_{\mathrm{3}} \to \mathit{V}_{\mathrm{2}} \to \mathit{V}_{\mathrm{3}} \to \mathit{V}_{\mathrm{1}} \to \mathit{V}_{\mathrm{3}} \to \mathit{V}_{\mathrm{1}} \to \mathit{V}_{\mathrm{4}} \to \mathit{V}_{\mathrm{1}}\]
+
+        Need Time: \[\sum_{\mathit{E}\in\mathit{G}}\mathit{w_E} + \mathit{w}_{\mathit{V}_{\mathrm{1}} \to \mathit{V}_{\mathrm{2}}} + \mathit{w}_{\mathit{V}_{\mathrm{7}} \to \mathit{V}_{\mathrm{8}}} = \mathrm{100 + 7 + 6 = 113}\]
+    }
+
 }
 
 
