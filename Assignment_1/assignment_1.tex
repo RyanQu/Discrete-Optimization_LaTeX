@@ -637,7 +637,32 @@ s7 = 0
         \[\mathit{V}_{\mathrm{1}} \to \mathit{V}_{\mathrm{2}} \to \mathit{V}_{\mathrm{5}} \to \mathit{V}_{\mathrm{8}} \to \mathit{V}_{\mathrm{6}} \to \mathit{V}_{\mathrm{5}} \to \mathit{V}_{\mathrm{3}} \to \mathit{V}_{\mathrm{6}} \to \mathit{V}_{\mathrm{8}} \to \mathit{V}_{\mathrm{7}} \to \mathit{V}_{\mathrm{6}} \to \mathit{V}_{\mathrm{7}}\]
         \[\to \mathit{V}_{\mathrm{6}} \to \mathit{V}_{\mathrm{4}} \to \mathit{V}_{\mathrm{7}} \to \mathit{V}_{\mathrm{4}} \to \mathit{V}_{\mathrm{3}} \to \mathit{V}_{\mathrm{2}} \to \mathit{V}_{\mathrm{3}} \to \mathit{V}_{\mathrm{1}} \to \mathit{V}_{\mathrm{3}} \to \mathit{V}_{\mathrm{1}} \to \mathit{V}_{\mathrm{4}} \to \mathit{V}_{\mathrm{1}}\]
 
-        Need Time: \[\sum_{\mathit{E}\in\mathit{G}}\mathit{w_E} + \mathit{w}_{\mathit{V}_{\mathrm{1}} \to \mathit{V}_{\mathrm{2}}} + \mathit{w}_{\mathit{V}_{\mathrm{7}} \to \mathit{V}_{\mathrm{8}}} = \mathrm{100 + 7 + 6 = 113}\]
+        Total time: 
+        \[\sum_{\mathit{E}\in\mathit{G}}\mathit{w_E} + \mathit{w}_{\mathit{V}_{\mathrm{1}} \to \mathit{V}_{\mathrm{2}}} + \mathit{w}_{\mathit{V}_{\mathrm{7}} \to \mathit{V}_{\mathrm{8}}} = \mathrm{100 + 7 + 6 = 113}\]
+    }
+    \subsection*{b.}{
+        To end in area 8, consider a \textit{Eulerian path} that the last step is \(\mathit{V}_{\mathrm{8}} \to \mathit{V}_{\mathrm{1}}\), which means \(\mathit{V}_{\mathrm{1}} \text{ and } \mathit{V}_{\mathrm{2}}\) are neighbors there is a edge between them. Because we don't need to go back area 1, so set \(\mathit{w}_{(\mathit{V}_{\mathrm{1}}, \mathit{V}_{\mathrm{8}})} = \infty \). Now \(\mathit{G}\) looks like:
+
+        \begin{center}{
+            \includegraphics[scale=0.6]{P10_3.png}
+        }
+        \end{center}
+
+        Construct a \textit{Eulerian path} from Graph \(\mathit{G}\), same with \textit{a.}, construct a \(\mathit{K}_{\mathrm{4}}\), the The complete graph on \(\mathrm{4}\) vertices of \(\mathit{V}_{\mathrm{1}}, \mathit{V}_{\mathrm{2}}, \mathit{V}_{\mathrm{7}}, \mathit{V}_{\mathrm{8}}\).
+
+        \begin{center}{
+            \includegraphics[scale=0.6]{P10_4.png}
+        }
+        \end{center}
+
+        Because we have to choose \(\mathit{V}_{\mathrm{1}} \to \mathit{V}_{\mathrm{8}}\) as the last step, so we have to choose \(\mathit{V}_{\mathrm{2}} \to \mathit{V}_{\mathrm{7}}\) as the another route.
+
+        So in this case, the \textit{Eulerian path} is:
+        \[\mathit{V}_{\mathrm{1}} \to \mathit{V}_{\mathrm{2}} \to \mathit{V}_{\mathrm{3}} \to \mathit{V}_{\mathrm{1}} \to \mathit{V}_{\mathrm{3}} \to \mathit{V}_{\mathrm{4}} \to \mathit{V}_{\mathrm{1}} \to \mathit{V}_{\mathrm{4}} \to \mathit{V}_{\mathrm{6}} \to \mathit{V}_{\mathrm{7}} \to \mathit{V}_{\mathrm{4}} \to \mathit{V}_{\mathrm{7}}\]
+        \[\to \mathit{V}_{\mathrm{6}} \to \mathit{V}_{\mathrm{3}} \to \mathit{V}_{\mathrm{5}} \to \mathit{V}_{\mathrm{2}} \to \mathit{V}_{\mathrm{5}} \to \mathit{V}_{\mathrm{6}} \to \mathit{V}_{\mathrm{5}} \to \mathit{V}_{\mathrm{8}} \to \mathit{V}_{\mathrm{6}} \to \mathit{V}_{\mathrm{7}} \to \mathit{V}_{\mathrm{8}} \to \mathit{V}_{\mathrm{1}}\]
+
+        The optimal path is elimate the last step to \(\mathit{V}_{\mathrm{1}}\) from the \textit{Eulerian path}. And the total time is:
+        \[\sum_{\mathit{E}\in\mathit{G}}\mathit{w_E} + \mathit{w}_{\mathit{V}_{\mathrm{2}} \to \mathit{V}_{\mathrm{7}}} = \mathrm{100 + 8 = 108}\]
     }
 
 }
