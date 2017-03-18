@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.17)  18 MAR 2017 19:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.17)  18 MAR 2017 19:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -391,86 +391,80 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \c@lstlisting=\count117
-LaTeX Font Info:    Try loading font information for U+eur on input line 44.
+LaTeX Font Info:    Try loading font information for U+eur on input line 43.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/ueur.fd
 File: ueur.fd 2013/01/14 v3.01 Euler Roman
 )
-LaTeX Font Info:    Try loading font information for U+euf on input line 44.
+LaTeX Font Info:    Try loading font information for U+euf on input line 43.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
-LaTeX Font Info:    Try loading font information for U+eus on input line 44.
+LaTeX Font Info:    Try loading font information for U+eus on input line 43.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/ueus.fd
 File: ueus.fd 2013/01/14 v3.01 Euler Script
 )
-LaTeX Font Info:    Try loading font information for U+euex on input line 44.
+LaTeX Font Info:    Try loading font information for U+euex on input line 43.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/ueuex.fd
 File: ueuex.fd 2013/01/14 v3.01 Euler extra symbols
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 44.
+LaTeX Font Info:    Try loading font information for U+msa on input line 43.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 44.
+LaTeX Font Info:    Try loading font information for U+msb on input line 43.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 22.54448pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
 
 [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 148--149
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--161
+Underfull \hbox (badness 10000) in paragraph at lines 159--160
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--167
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
 
  []
 
 [3] <P4.png, id=31, 412.54124pt x 393.47pt>
 File: P4.png Graphic file (type png)
  <use P4.png>
-Package pdftex.def Info: P4.png used on input line 193.
+Package pdftex.def Info: P4.png used on input line 192.
 (pdftex.def)             Requested size: 206.27011pt x 196.73451pt.
 
-Overfull \hbox (3.1515pt too wide) detected at line 200
+Overfull \hbox (3.1515pt too wide) detected at line 199
 \OT1/cmr/m/it/10 E \U/euf/m/n/10 = [](\U/eur/m/n/10 1; 2\U/euf/m/n/10 )\U/eur/m
 /n/10 ; \U/euf/m/n/10 (\U/eur/m/n/10 3; 5\U/euf/m/n/10 )\U/eur/m/n/10 ; \U/euf/
 m/n/10 (\U/eur/m/n/10 4; 5\U/euf/m/n/10 )\U/eur/m/n/10 ; \U/euf/m/n/10 (\U/eur/
@@ -484,33 +478,33 @@ eur/m/n/10 5; 6\U/euf/m/n/10 )\U/eur/m/n/10 ; \U/euf/m/n/10 (\U/eur/m/n/10 2; 5
  []
 
 [4 <./P4.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
 
  []
 
 [5]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 256.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 255.
 
  (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <10> not available
-(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 257.
+(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 256.
 LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <10> not available
-(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 262.
+(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 261.
  [6]
 [7] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 397--398
+Underfull \hbox (badness 10000) in paragraph at lines 394--395
 
  []
 
 [9]
-Overfull \hbox (24.72514pt too wide) in paragraph at lines 452--453
+Overfull \hbox (24.72514pt too wide) in paragraph at lines 449--450
 []\OT1/cmr/m/n/10 Result: it means the max to-tal profit is 172 by in-vest-ing 
 $\U/eus/m/n/10 f\OT1/cmr/m/it/10 A\U/eur/m/n/10 ; \OT1/cmr/m/it/10 B\U/eur/m/n/
 10 ; \OT1/cmr/m/it/10 C\U/eur/m/n/10 ; \OT1/cmr/m/it/10 D\U/eur/m/n/10 ; \OT1/c
@@ -520,76 +514,75 @@ H\U/eur/m/n/10 ; \OT1/cmr/m/it/10 J\U/eur/m/n/10 ; \OT1/cmr/m/it/10 K\U/eus/m/n
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 478--479
+Underfull \hbox (badness 10000) in paragraph at lines 475--476
 
  []
 
 [10] [11] [12] [13] <P10.png, id=69, 674.52pt x 484.81125pt>
 File: P10.png Graphic file (type png)
  <use P10.png>
-Package pdftex.def Info: P10.png used on input line 621.
+Package pdftex.def Info: P10.png used on input line 618.
 (pdftex.def)             Requested size: 269.80322pt x 193.92105pt.
 
-<P10_1.png, id=70, 287.0725pt x 210.7875pt>
+<P10_1.png, id=70, 299.1175pt x 210.7875pt>
 File: P10_1.png Graphic file (type png)
  <use P10_1.png>
-Package pdftex.def Info: P10_1.png used on input line 630.
-(pdftex.def)             Requested size: 172.24483pt x 126.47346pt.
- [14 <./P10.png>]
-<P10_2.png, id=75, 538.01pt x 392.46625pt>
+Package pdftex.def Info: P10_1.png used on input line 627.
+(pdftex.def)             Requested size: 179.47188pt x 126.47346pt.
+
+<P10_2.png, id=71, 538.01pt x 392.46625pt>
 File: P10_2.png Graphic file (type png)
  <use P10_2.png>
-Package pdftex.def Info: P10_2.png used on input line 637.
+Package pdftex.def Info: P10_2.png used on input line 634.
 (pdftex.def)             Requested size: 322.80849pt x 235.48155pt.
- [15 <./P10_1.png> <./P10_2.png>] <P10_3.png, id=82, 538.01pt x 399.4925pt>
+ [14 <./P10.png> <./P10_1.png>] <P10_3.png, id=77, 538.01pt x 399.4925pt>
 File: P10_3.png Graphic file (type png)
  <use P10_3.png>
-Package pdftex.def Info: P10_3.png used on input line 652.
+Package pdftex.def Info: P10_3.png used on input line 649.
 (pdftex.def)             Requested size: 322.80849pt x 239.69734pt.
-
-<P10_4.png, id=83, 292.09125pt x 218.8175pt>
+ [15 <./P10_2.png>] <P10_4.png, id=83, 292.09125pt x 218.8175pt>
 File: P10_4.png Graphic file (type png)
  <use P10_4.png>
-Package pdftex.def Info: P10_4.png used on input line 659.
+Package pdftex.def Info: P10_4.png used on input line 656.
 (pdftex.def)             Requested size: 175.25609pt x 131.2915pt.
- [16 <./P10_3.png> <./P10_4.png>] [17] (./assignment_1.aux) ) 
+ [16 <./P10_3.png> <./P10_4.png>] (./assignment_1.aux) ) 
 Here is how much of TeX's memory you used:
  4518 strings out of 493013
  57823 string characters out of 6133343
- 188980 words of memory out of 5000000
+ 185980 words of memory out of 5000000
  7967 multiletter control sequences out of 15000+600000
  12239 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,11n,43p,598b,1649s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texliv
-e/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2016/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2016/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2016/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmti7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
-blic/amsfonts/euler/euex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/
-public/amsfonts/euler/euex7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
-/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
-e1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
-pe1/public/amsfonts/euler/eurm10.pfb></usr/local/texlive/2016/texmf-dist/fonts/
-type1/public/amsfonts/euler/eurm7.pfb></usr/local/texlive/2016/texmf-dist/fonts
-/type1/public/amsfonts/euler/eusm10.pfb></usr/local/texlive/2016/texmf-dist/fon
-ts/type1/public/amsfonts/euler/eusm7.pfb></usr/local/texlive/2016/texmf-dist/fo
-nts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2016/texmf-dis
-t/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2016/texmf
--dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2016/texmf-dist/fo
-nts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
-1/urw/courier/ucrro8a.pfb>
-Output written on assignment_1.pdf (17 pages, 606056 bytes).
+{/usr/local/texlive/201
+6/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2016/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/font
+s/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmti7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/
+amsfonts/euler/euex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publi
+c/amsfonts/euler/euex7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
+ic/amsfonts/euler/eufm10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
+blic/amsfonts/euler/eufm7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/p
+ublic/amsfonts/euler/eurm10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
+/public/amsfonts/euler/eurm7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
+1/public/amsfonts/euler/eusm10.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
+pe1/public/amsfonts/euler/eusm7.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
+ype1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2016/texmf-dist/fon
+ts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2016/texmf-dist
+/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
+ype1/urw/courier/ucrr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw
+/courier/ucrro8a.pfb>
+Output written on assignment_1.pdf (16 pages, 605797 bytes).
 PDF statistics:
- 166 PDF objects out of 1000 (max. 8388607)
- 110 compressed objects within 2 object streams
+ 163 PDF objects out of 1000 (max. 8388607)
+ 108 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
