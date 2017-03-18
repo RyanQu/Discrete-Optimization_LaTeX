@@ -608,7 +608,12 @@ s7 = 0
 }
 
 \section*{Problem 9}{
+    %TODO
+    \textit{Edmond's Algorithm}, also known as \textit{Blossom Algorithm}, is an algorithm in graph theory for constructing maximum matchings on graphs. The matching is constructed by iteratively improving an initial empty matching along augmenting paths in the graph. 
 
+    the key new idea is that an odd-length cycle in the graph (blossom) is contracted to a single vertex, with the search continuing iteratively in the contracted graph.
+
+    In the algorithm process, before blossom contraction and find augmenting path, for exposed vertices we need to create singleton trees and find unmarked vertices and edges to add on the tree. In this step, if the graph is weighted, we could check whether the new vertex and edge produces a matching of maximum total weight. In my opinion, in this part we could use \textit{Greedy Algorithm} to choose the new elements, but for the main part of the model \textit{Blossom Algorithm} is the best way to find the augmenting path to genenrate the maximum matchings.
 }
 
 \section*{Problem 10}{
