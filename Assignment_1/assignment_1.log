@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.17)  17 MAR 2017 16:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.17)  18 MAR 2017 01:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -519,42 +519,48 @@ H\U/eur/m/n/10 ; \OT1/cmr/m/it/10 J\U/eur/m/n/10 ; \OT1/cmr/m/it/10 K\U/eus/m/n
 /10 g$ 
  []
 
-[10] [11] (./assignment_1.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 478--479
+
+ []
+
+[10] [11] [12] [13] (./assignment_1.aux) ) 
 Here is how much of TeX's memory you used:
- 4443 strings out of 493013
- 57098 string characters out of 6133343
- 173980 words of memory out of 5000000
- 7897 multiletter control sequences out of 15000+600000
+ 4493 strings out of 493013
+ 57513 string characters out of 6133343
+ 188980 words of memory out of 5000000
+ 7947 multiletter control sequences out of 15000+600000
  12239 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,11n,43p,446b,1649s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/d
-vips/base/8r.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr5.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.p
-fb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pf
-b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb>
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/euler/euex10.pf
-b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.
-pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7
-.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/euler/eurm
-10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/euler/eu
-rm7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/euler/e
-usm10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/euler
-/eusm7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symb
-ols/msam10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/
-symbols/msbm10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/courier/
-ucrb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/courier/ucrr8a.p
-fb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb>
-Output written on assignment_1.pdf (11 pages, 271448 bytes).
+{/usr/local/texlive/2016/texmf-dist/f
+onts/enc/dvips/base/8r.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr5.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmti10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmti7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/euler
+/euex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/eul
+er/eufm10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/e
+uler/eufm7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/
+euler/eurm10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfont
+s/euler/eurm7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfon
+ts/euler/eusm10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsf
+onts/euler/eusm7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/ams
+fonts/symbols/msam10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
+/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/ur
+w/courier/ucrb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/courie
+r/ucrr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/courier/ucrro8
+a.pfb>
+Output written on assignment_1.pdf (13 pages, 275309 bytes).
 PDF statistics:
- 132 PDF objects out of 1000 (max. 8388607)
- 94 compressed objects within 1 object stream
+ 139 PDF objects out of 1000 (max. 8388607)
+ 99 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
